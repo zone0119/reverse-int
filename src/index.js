@@ -1,6 +1,8 @@
 module.exports = function reverse (n) {
-    n = String(n);
+    var res = '';
+    n = String(Math.abs(n));
     n = n.split('').reverse();
-    return n;
+    n.forEach(element => res =  res + element);
+    return parseInt(res);
 }
 
